@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Resources</title>
+</head>
+<link rel="stylesheet" href="JEE Website.css">
+<body>
+    <nav class="navbar background">
+        <div class="img1"><img src="images/img1.png" alt="logo"></div>
+        <ul class="ullist">
+            <li><a href="#Home"><b>Home</b></a></li>
+            <li><a href="#About"><b>About</b></a></li>
+            <li><a href="#Interview" onclick="intclick()"><b>Interviews</b></a></li>
+            <li><a href="#Resources"><b>Resources</b></a></li>
+            <li><a href="#Contact"><b>Contact Us</b></a></li>
+        </ul>
+        <div class="nav2">
+            <input type="text" id="inpt" name="Search here" value="Search here">
+            <button class="btn">Search</button>
+        </div>
+    </nav>
+    
+    <section class="background sec1" id="Home">
+        <div class="box-main">
+            <div class="one">
+                <p class="big">Welcome to the ultimate JEE page</p>
+                <p class="small">As JEE is a 2-3 years long journeg with lots of ups and downs, we are here to lend a helping hand in your jee journey.
+                    Through this website we aim at providing you the best of the resources for JEE like notes, question papers, etc..for free.
+    
+                </p>
+                    <div class="buttons">
+                        <button class="button" onclick="share()">Share with others</button>
+                        <a href="https://play.google.com/store/apps/details?id=com.abhyas.nta.com" target="_blank">
+                        <button class="button" onclick="clicked1()">Download the App</button></a>
+                    </div>
+                    <div><p id="sharethis">Link Copied</p></div>
+            </div>
+            <div class="two">
+                <img src="images/book.jpg" alt="Book Image">
+                <img class="transition" src="images/reading.jpg">
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="sec2" id="Resources">
+
+        <div class="secondhead">
+            <b>Here you can access the resources.</b>
+        </div>
+            
+    <div class="ek">
+        <div class="ek1">
+            <img src="images/notes.png" alt="Notes Img">
+        
+            <p>NOTES</p>
+        </div>
+    </div>
+    
+    <div class="do">
+        <div class="do1">
+            <p>PRACTICE</p>
+            
+            <img src="images/practice.jpg" alt="Notes Img">
+        </div>
+    </div>
+
+    <div class="teen">
+        <div class="teen1">
+            
+            <img src="images/pyqs.png" alt="Notes Img">
+            
+            <p>PYQs</p>
+        </div>
+    </div>
+
+    <div class="chaar">
+        <div class="chaar1">
+            <p>TIPS</p>
+            
+            <img src="images/tips.png" alt="Notes Img">
+        </div>
+    </div>
+
+    </section>
+
+    
+
+    <section class="sec3" id="Contact">
+        <div class="secondhead">
+            <b>Contact us here👇.</b>
+            </div>
+            <form class="frm" action="">
+            <div class="inpts">
+                <input type="text" id="inpt1" name="Name" value="Name"> 
+                <input type="text" id="inpt1" name="Phone" value="Phone"> 
+                <input type="email" id="inpt1" name="email" value="Email"> 
+                <input type="text" id="inpt4" name="Any Message" value="Any Message"> 
+                <div><button type="submit" class="lastbtn">Submit</button></div>
+            </div>
+            </form>
+
+    </section>
+
+    <section class="lstbtn" id="Interview">
+        
+        <br>
+        <br>
+        <h2>HELLO...</h2>
+        
+        
+        <div>
+            <p style="color: #EB1D60; font-size: 60px; font-family: sans-serif;"><b>Acheiver's Interviews are to be added soon.</b></p><br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">The current time is: <span id="time"></span></h1>
+              <p class="lead">Utilize each and every bit of time you have.</p>
+            </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div class="social">
+            <a href="https://www.instagram.com/kart_hik9538/" target="_blank"><img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"/></a>
+    <a href="https://www.facebook.com/profile.php?id=100074214960825" target="_blank"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"></a>
+    <a href="https://www.linkedin.com/in/karthik-naik-06228b229/" target="_blank"><img height="50" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG24.png"></a>
+    <!-- <a href="https://www.freelancer.in/u/Karthik6987" target="_blank"><img height="50" src="https://logos-download.com/wp-content/uploads/2016/06/Freelancer_logo.png"></a> -->
+    <p>My gmail Id is: <h4>k.naik122003@gmail.com</h4></p>
+        </div>
+    </section>   
+
+    <div class="footer">
+        <footer style="margin: 10px;">Privacy Notice 2022, jee.com, Inc. or its affiliates</footer>
+    </div>
+    
+
+
+</body>
+
+<script>
+    function clicked(){
+        alert('Thanks for sharing our website.')
+    }
+    function clicked1(){
+        alert('Thanks for downloading the app.')
+    }
+    function intclick(){
+        alert('Interviews are not added yet.')
+    }
+
+    // document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+    //     anchor.addEventListener("click", function(e){
+    //         e.preventDefault();
+    //         document.querySelector(this.getAttribute("href").scrollIntoView({
+    //             behaviour : "smooth"
+    //         }))
+    //     })
+    // })
+
+    let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date(); 
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time + "<br>Date: " + date;
+        }, 1000);
+
+        let click=0;
+        let sharing = document.getElementById("sharethis")
+        function share() {
+            
+            if(click%2==0) {
+                sharing.innerText = "Link Copied";}
+            else{
+                sharing.innerText = " ";
+            }
+            click=click+1;
+            console.log(sharing.innerText);
+        }
+</script>
+</html>
